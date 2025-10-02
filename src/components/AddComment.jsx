@@ -2,11 +2,13 @@ import { Component } from "react";
 import { Form, InputGroup } from "react-bootstrap";
 
 class AddComment extends Component {
-  state = {};
+  state = {
+    text: "",
+  };
   render() {
     return (
       <>
-        <h5>Add Comment</h5>
+        <p className="fw-bold">Add Comment {this.props.asin}</p>
         <InputGroup className="mb-3">
           <Form.Control
             value={this.state.text}
