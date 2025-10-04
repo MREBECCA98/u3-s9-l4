@@ -38,7 +38,7 @@ class CommentArea extends Component {
       <>
         <h5 className="fw-bold">Comment Area</h5>
         <div>{this.props.asin}</div>
-        <AddComment asin={this.props.asin} />
+        <AddComment asin={this.props.asin} fetchComments={this.fetchComments} />
         <CommentList comment={this.state.comments} />
       </>
     );
